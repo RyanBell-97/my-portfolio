@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-secondary-light text-black dark:bg-gray-900 dark:text-white;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+:root {
+  --color-primary: #0066FF;
+  --color-secondary-light: #F8F5F2;
+  --color-secondary-dark: #1a1a1a;
+}
+
+.bg-secondary {
+  @apply bg-secondary-light dark:bg-gray-900;
+}
+
+.profile-image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-primary);
+  margin: 1rem auto;
+}
+
+.primary-button {
+  @apply bg-primary text-white hover:bg-blue-700 dark:hover:bg-blue-600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-button {
+  @apply border-2 border-black dark:border-white text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.skill-marker {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-primary);
+  margin-right: 0.5rem;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.experience-item, .education-item {
+  @apply bg-white dark:bg-gray-800 shadow-sm dark:shadow-md;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.date-text {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.project-card {
+  @apply bg-white dark:bg-gray-800 shadow-sm dark:shadow-md rounded;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  @apply shadow-md dark:shadow-lg;
+  transform: translateY(-5px);
+}
+
+.tech-tag {
+  @apply bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    text-align: center;
+  }
+}
