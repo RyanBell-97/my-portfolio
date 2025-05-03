@@ -10,7 +10,7 @@ const Projects = () => {
     {
       title: "SFK Tutoring App",
       description: "A multi-tenant web and mobile application that matches volunteer tutors with underprivileged pupils. Built with Ionic, Angular, Docker, Node.js, and CakePHP + Swagger. I designed the role & permission model and set up GitLab CI/CD in an agile 4-person team.",
-      imageUrl: "/sfk-tutoring-app.png",
+      imageUrl: `${process.env.PUBLIC_URL}/sfk-tutoring-app.png`,
       technologies: ["Ionic", "Angular", "Docker", "Node.js", "CakePHP", "Swagger", "GitLab CI/CD"],
       detailedDescription: (
         <div>
@@ -35,7 +35,7 @@ const Projects = () => {
     {
       title: "Ticket System",
       description: "A web-based ticket system developed in a team of four as part of Integrative Project Management 2.0. Used Vue.js & TypeScript for the front-end, implemented roles, ticket states, and comments. GitLab was used for CI/CD, issues, and reviews.",
-      imageUrl: "/ticket-system.png",
+      imageUrl: `${process.env.PUBLIC_URL}/ticket-system.png`,
       technologies: ["Vue.js", "TypeScript", "GitLab", "CI/CD"],
       detailedDescription: (
         <div>
@@ -60,7 +60,7 @@ const Projects = () => {
     {
       title: "Experimental Hardware Projects",
       description: "A multi-part academic project focused on digital logic design, hardware description, and system-level architecture. Implemented various digital components from combinational logic to a full single-cycle processor simulation using SystemVerilog and FPGA toolchains.",
-      imageUrl: "/ticket-system.png", 
+      imageUrl: `${process.env.PUBLIC_URL}/ticket-system.png`, 
       technologies: ["Verilog", "SystemVerilog", "FPGA", "Quartus", "GTKWave", "ARM AArch64"],
       detailedDescription: (
         <div>
@@ -95,7 +95,7 @@ const Projects = () => {
     {
       title: "EmailApp_Mile",
       description: "A Java desktop email client built using JavaMail API and Swing. Features secure SMTP/POP3 protocols with configurable login options. The project is open-sourced.",
-      imageUrl: "/email-app-mile.png",
+      imageUrl: `${process.env.PUBLIC_URL}/email-app-mile.png`,
       technologies: ["Java", "JavaMail API", "Swing", "SMTP/POP3"],
       detailedDescription: (
         <div>
@@ -129,7 +129,7 @@ const Projects = () => {
     {
       title: "Mill Game",
       description: "Implementation of \"Nine Men's Morris\" board game with Java & Swing. Includes full game logic and graphical user interface.",
-      imageUrl: "/mill-game.png",
+      imageUrl: `${process.env.PUBLIC_URL}/mill-game.png`,
       technologies: ["Java", "Swing", "Game Development"],
       detailedDescription: (
         <div>

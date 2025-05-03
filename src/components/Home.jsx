@@ -30,7 +30,7 @@ const Home = () => {
             <div className="w-48 h-48 rounded-full overflow-hidden mb-6">
               {/* Porfile photo */}
               <img 
-                src="/profile-photo.jpg" 
+                src={`${process.env.PUBLIC_URL}/profile-photo.jpg`} 
                 alt="Ahmed Bellagoun" 
                 className="w-full h-full object-cover"
                 onError={(e) => {
