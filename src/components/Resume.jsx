@@ -152,7 +152,7 @@ const Resume = () => {
                 <ul>
                   <li>
                     <a 
-                      href="/Ahmed_Bellagoun_EN_CV.pdf" 
+                      href={`${process.env.PUBLIC_URL}/Ahmed_Bellagoun_EN_CV.pdf`}
                       download 
                       className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                       onClick={(e) => e.stopPropagation()}
@@ -162,10 +162,9 @@ const Resume = () => {
                   </li>
                   <li>
                     <a 
-                      href="/Ahmed_Bellagoun_DE_CV.pdf" 
+                      href={`${process.env.PUBLIC_URL}/Ahmed_Bellagoun_DE_CV.pdf`} 
                       download 
                       className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-                      
                       onClick={(e) => e.stopPropagation()}
                     >
                       German Version
