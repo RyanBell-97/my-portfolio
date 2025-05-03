@@ -2,7 +2,11 @@ name: Deploy React site to GitHub Pages
 
 on:
   push:
-    branches: [ main ]   # rebuild every time you push to main
+    branches: [ main ]
+
+
+permissions:
+  contents: write        # allow git push
 
 jobs:
   build:
